@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 40) {
+            Text("📧")
+                .font(.system(size: 120))
+            
+            Text("Envelope")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Text("Your envelope app")
+                .font(.body)
+                .foregroundColor(.gray)
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemBackground))
     }
 }
 
